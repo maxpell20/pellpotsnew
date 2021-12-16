@@ -11,6 +11,7 @@
         <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Montserrat&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
         <noscript> <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Montserrat&display=swap" rel="stylesheet" type="text/css" /> </noscript>
         <link rel="stylesheet" href="css/styles.css" />
+               <script src="js/lazy.min.js" async=""></script>
     </head>
     <body id="page-top">
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
@@ -214,7 +215,10 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <img class="img-fluid rounded mb-5" data-src="assets/img/portfolio/1.webp" alt="..." class="lazyload" />
+                                    <picture>
+                                        <img class="img-fluid rounded mb-5 lazyload" source data-srcset='assets/img/portfolio/1.webp' type="image/webp" media="(max-width: 500px)"/>
+                                    </picture>
+
                                     <button class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times fa-fw"></i> Close Window</button>
                                 </div>
                             </div>
@@ -237,7 +241,9 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <img class="img-fluid rounded mb-5" data-src="assets/img/portfolio/2.webp" alt="..." class="lazyload" />
+                                    <picture>
+                                        <img class="img-fluid rounded mb-5 lazyload" source data-srcset='assets/img/portfolio/2.webp' type="image/webp" media="(max-width: 500px)"/>
+                                    </picture>
                                     <button class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times fa-fw"></i> Close Window</button>
                                 </div>
                             </div>
@@ -260,7 +266,9 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <img class="img-fluid rounded mb-5" data-src="assets/img/portfolio/3.webp" alt="..." class="lazyload" />
+                                    <picture>
+                                        <img class="img-fluid rounded mb-5 lazyload" source data-srcset='assets/img/portfolio/3.webp' type="image/webp" media="(max-width: 500px)"/>
+                                    </picture>
                                     <button class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times fa-fw"></i> Close Window</button>
                                 </div>
                             </div>
@@ -283,8 +291,10 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <img class="img-fluid rounded mb-5" data-src="assets/img/portfolio/4.webp" alt="..." class="lazyload" />
-                                    <button class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times fa-fw"></i> Close Window</button>
+                                    <picture>
+                                        <img class="img-fluid rounded mb-5 lazyload" source data-srcset='assets/img/portfolio/4.webp' type="image/webp" media="(max-width: 500px)"/>
+                                    </picture>
+                                     <button class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times fa-fw"></i> Close Window</button>
                                 </div>
                             </div>
                         </div>
@@ -306,7 +316,9 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <img class="img-fluid rounded mb-5" data-src="assets/img/portfolio/5.webp" alt=".." class="lazyload" />
+                                    <picture>
+                                        <img class="img-fluid rounded mb-5 lazyload" source data-srcset='assets/img/portfolio/5.webp' type="image/webp" media="(max-width: 500px)"/>
+                                    </picture>
                                     <button class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times fa-fw"></i> Close Window</button>
                                 </div>
                             </div>
@@ -329,7 +341,9 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <img class="img-fluid rounded mb-5" data-src="assets/img/portfolio/6.webp" alt="..." class="lazyload" />
+                                    <picture>
+                                        <img class="img-fluid rounded mb-5 lazyload" source data-srcset='assets/img/portfolio/6.webp' type="image/webp" media="(max-width: 500px)"/>
+                                    </picture>
                                     <button class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times fa-fw"></i> Close Window</button>
                                 </div>
                             </div>
@@ -340,6 +354,6 @@
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
         <script src="js/scripts.js"></script>
-       <script src="js/lazy.min.js" async=""></script>
+
     </body>
 </html>
